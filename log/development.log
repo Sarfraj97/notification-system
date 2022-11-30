@@ -1,0 +1,433 @@
+Started GET "/" for 127.0.0.1 at 2022-11-23 18:44:10 +0530
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  role "developer" does not exist
+):
+  
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1990.8ms)[0m  [1m[35mCREATE DATABASE "notification_feature_development" ENCODING = 'unicode'[0m
+  [1m[35m (1171.5ms)[0m  [1m[35mCREATE DATABASE "notification_feature_test" ENCODING = 'unicode'[0m
+Started GET "/" for 127.0.0.1 at 2022-11-23 18:48:35 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.3ms | Allocations: 526)
+Completed 200 OK in 35ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4117)
+
+
+  [1m[35m (141.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (136.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProjects (20221123133321)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (142.3ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "name" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221123133321"]]
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-23 13:35:37.565578"], ["updated_at", "2022-11-23 13:35:37.565578"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNotifications (20221123134000)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (158.6ms)[0m  [1m[35mCREATE TABLE "notifications" ("id" bigserial primary key, "title" text, "text" text, "on_click_url" character varying, "sent_at" timestamp(6), "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221123134000"]]
+  [1m[36mTRANSACTION (26.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20221123134845)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (133.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221123134845"]]
+  [1m[36mTRANSACTION (23.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNotificationRecipientCopies (20221123135134)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (85.1ms)[0m  [1m[35mCREATE TABLE "notification_recipient_copies" ("id" bigserial primary key, "recipient_id" bigint NOT NULL, "email_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_48f9a53577"
+FOREIGN KEY ("recipient_id")
+  REFERENCES "recipients" ("id")
+, CONSTRAINT "fk_rails_ffd76d5dfb"
+FOREIGN KEY ("email_id")
+  REFERENCES "emails" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNotificationRecipientCopies (20221123135134)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (79.6ms)[0m  [1m[35mCREATE TABLE "notification_recipient_copies" ("id" bigserial primary key, "recipient_id" bigint, "email_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (50.7ms)[0m  [1m[35mCREATE INDEX "index_notification_recipient_copies_on_recipient_id" ON "notification_recipient_copies" ("recipient_id")[0m
+  [1m[35m (86.6ms)[0m  [1m[35mCREATE INDEX "index_notification_recipient_copies_on_email_id" ON "notification_recipient_copies" ("email_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221123135134"]]
+  [1m[36mTRANSACTION (19.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-11-24 13:14:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 525)
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3675)
+
+
+Started GET "/" for 127.0.0.1 at 2022-11-24 13:14:03 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/developer/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 297)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 996)
+
+
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.9ms)[0m  [1m[32mINSERT INTO "projects" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Test project"], ["created_at", "2022-11-24 07:48:19.205538"], ["updated_at", "2022-11-24 07:48:19.205538"]]
+  [1m[36mTRANSACTION (35.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNotifications (20221123134000)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "notifications"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20221123134000"]]
+  [1m[36mTRANSACTION (64.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateNotifications (20221123134000)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (130.2ms)[0m  [1m[35mCREATE TABLE "notifications" ("id" bigserial primary key, "title" text, "text" text, "on_click_url" character varying, "sent_at" timestamp(6), "project_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (65.8ms)[0m  [1m[35mCREATE INDEX "index_notifications_on_project_id" ON "notifications" ("project_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20221123134000"]]
+  [1m[36mTRANSACTION (22.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2852714495523477480)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mNotification Load (2.2ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" ORDER BY "projects"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 08:30:28.112681"], ["updated_at", "2022-11-24 08:30:28.112681"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 08:33:36.264256"], ["updated_at", "2022-11-24 08:33:36.264256"]]
+  [1m[36mNotification Create (1.2ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 08:33:36.253198"], ["updated_at", "2022-11-24 08:33:36.253198"]]
+  [1m[36mTRANSACTION (25.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mNotification Load (1.8ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (1.4ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (25.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (26.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (1.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 08:35:54.070893"], ["updated_at", "2022-11-24 08:35:54.070893"]]
+  [1m[36mNotification Create (0.8ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 08:35:54.066364"], ["updated_at", "2022-11-24 08:35:54.066364"]]
+  [1m[36mTRANSACTION (27.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotification Load (1.0ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.6ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (19.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (2.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 08:37:56.782862"], ["updated_at", "2022-11-24 08:37:56.782862"]]
+  [1m[36mNotification Create (0.5ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 08:37:56.779013"], ["updated_at", "2022-11-24 08:37:56.779013"]]
+  [1m[36mTRANSACTION (446.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotificationRecipientCopy Load (2.2ms)[0m  [1m[34mSELECT "notification_recipient_copies".* FROM "notification_recipient_copies"[0m
+  [1m[36mNotification Load (1.7ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (1.4ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (16.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (21.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 08:42:56.599920"], ["updated_at", "2022-11-24 08:42:56.599920"]]
+  [1m[36mNotification Create (3.1ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 08:42:56.571220"], ["updated_at", "2022-11-24 08:42:56.571220"]]
+  [1m[36mTRANSACTION (79.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotification Load (0.7ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (30.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (19.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 09:31:13.803094"], ["updated_at", "2022-11-24 09:31:13.803094"]]
+  [1m[36mNotification Create (0.5ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 09:31:13.799126"], ["updated_at", "2022-11-24 09:31:13.799126"]]
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotification Load (2.2ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.8ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (14.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (1.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 09:42:54.561773"], ["updated_at", "2022-11-24 09:42:54.561773"]]
+  [1m[36mNotification Create (1.8ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 09:42:54.551330"], ["updated_at", "2022-11-24 09:42:54.551330"]]
+  [1m[36mTRANSACTION (39.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotificationRecipientCopy Load (1.8ms)[0m  [1m[34mSELECT "notification_recipient_copies".* FROM "notification_recipient_copies"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (16.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotificationRecipientCopy Load (2.2ms)[0m  [1m[34mSELECT "notification_recipient_copies".* FROM "notification_recipient_copies"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 09:44:20.477821"], ["updated_at", "2022-11-24 09:44:20.477821"]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 09:44:20.474063"], ["updated_at", "2022-11-24 09:44:20.474063"]]
+  [1m[36mTRANSACTION (622.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (25.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mNotification Load (1.8ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (41.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.8ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 09:52:16.129610"], ["updated_at", "2022-11-24 09:52:16.129610"]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 09:52:16.115297"], ["updated_at", "2022-11-24 09:52:16.115297"]]
+  [1m[36mTRANSACTION (39.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (27.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (32.0ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 9], ["email_id", nil], ["created_at", "2022-11-24 09:52:40.904894"], ["updated_at", "2022-11-24 09:52:40.904894"]]
+  [1m[36mTRANSACTION (18.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (2.4ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (53.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (26.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 09:55:30.236297"], ["updated_at", "2022-11-24 09:55:30.236297"]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "First notification!"], ["text", "This is our first notification!"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 09:55:30.233460"], ["updated_at", "2022-11-24 09:55:30.233460"]]
+  [1m[36mTRANSACTION (15.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (0.7ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 10], ["email_id", nil], ["created_at", "2022-11-24 09:55:32.354864"], ["updated_at", "2022-11-24 09:55:32.354864"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mNotification Create (0.8ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:10:58.502778"], ["updated_at", "2022-11-24 10:10:58.502778"]]
+  [1m[36mTRANSACTION (38.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (0.6ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 10], ["email_id", nil], ["created_at", "2022-11-24 10:11:03.752760"], ["updated_at", "2022-11-24 10:11:03.752760"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (1.4ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.9ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (29.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.3ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (17.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 10:12:29.825128"], ["updated_at", "2022-11-24 10:12:29.825128"]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:12:29.820778"], ["updated_at", "2022-11-24 10:12:29.820778"]]
+  [1m[36mTRANSACTION (21.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (0.9ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 11], ["email_id", nil], ["created_at", "2022-11-24 10:12:33.536835"], ["updated_at", "2022-11-24 10:12:33.536835"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (1.6ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (18.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 10:13:10.544421"], ["updated_at", "2022-11-24 10:13:10.544421"]]
+  [1m[36mNotification Create (0.6ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:13:10.541794"], ["updated_at", "2022-11-24 10:13:10.541794"]]
+  [1m[36mTRANSACTION (16.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (1.4ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 12], ["email_id", nil], ["created_at", "2022-11-24 10:13:13.480145"], ["updated_at", "2022-11-24 10:13:13.480145"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (1.7ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.8ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (21.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (135.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 10:25:27.361357"], ["updated_at", "2022-11-24 10:25:27.361357"]]
+  [1m[36mNotification Create (0.6ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:25:27.357853"], ["updated_at", "2022-11-24 10:25:27.357853"]]
+  [1m[36mTRANSACTION (15.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (1.3ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 13], ["email_id", nil], ["created_at", "2022-11-24 10:25:30.075662"], ["updated_at", "2022-11-24 10:25:30.075662"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (1.1ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (23.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (30.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 10:26:38.507193"], ["updated_at", "2022-11-24 10:26:38.507193"]]
+  [1m[36mNotification Create (0.5ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:26:38.503324"], ["updated_at", "2022-11-24 10:26:38.503324"]]
+  [1m[36mTRANSACTION (37.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (1.1ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 14], ["email_id", nil], ["created_at", "2022-11-24 10:26:41.195876"], ["updated_at", "2022-11-24 10:26:41.195876"]]
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/users%2F14/publish response_code=401 return_code=ok total_time=0.246642
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mNotification Load (0.8ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotification Destroy (0.5ms)[0m  [1m[31mDELETE FROM "notifications" WHERE "notifications"."id" = $1[0m  [["id", 14]]
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[36mTRANSACTION (21.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["email", "youremail@example.com"], ["created_at", "2022-11-24 10:28:47.784684"], ["updated_at", "2022-11-24 10:28:47.784684"]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test"], ["text", "text"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:28:47.780971"], ["updated_at", "2022-11-24 10:28:47.780971"]]
+  [1m[36mTRANSACTION (15.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (0.7ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 15], ["email_id", nil], ["created_at", "2022-11-24 10:28:49.449806"], ["updated_at", "2022-11-24 10:28:49.449806"]]
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/users%2F15/publish response_code=201 return_code=ok total_time=0.366931
+  [1m[36mTRANSACTION (28.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mNotification Load (1.3ms)[0m  [1m[34mSELECT "notifications".* FROM "notifications"[0m
+  [1m[36mNotificationRecipientCopy Load (1.1ms)[0m  [1m[34mSELECT "notification_recipient_copies".* FROM "notification_recipient_copies"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "youremail@example.com"], ["LIMIT", 1]]
+  [1m[36mNotification Create (0.7ms)[0m  [1m[32mINSERT INTO "notifications" ("title", "text", "on_click_url", "sent_at", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["title", "test2"], ["text", "text2"], ["on_click_url", nil], ["sent_at", nil], ["project_id", 1], ["created_at", "2022-11-24 10:49:59.279339"], ["updated_at", "2022-11-24 10:49:59.279339"]]
+  [1m[36mTRANSACTION (24.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mNotificationRecipientCopy Create (1.0ms)[0m  [1m[32mINSERT INTO "notification_recipient_copies" ("recipient_id", "email_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["recipient_id", 15], ["email_id", nil], ["created_at", "2022-11-24 10:50:02.036325"], ["updated_at", "2022-11-24 10:50:02.036325"]]
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/users%2F15/publish response_code=201 return_code=ok total_time=0.206595
+  [1m[36mTRANSACTION (20.8ms)[0m  [1m[35mCOMMIT[0m
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/test/publish response_code=201 return_code=ok total_time=0.316256
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/test/publish response_code=201 return_code=ok total_time=0.148897
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/test/messages?direction=backwards&limit=100 response_code=200 return_code=ok total_time=0.350834
+ETHON: performed EASY effective_url=https://rest.ably.io/channels/channel+for+chat/publish response_code=201 return_code=ok total_time=0.281178
